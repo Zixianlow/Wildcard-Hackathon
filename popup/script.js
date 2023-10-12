@@ -1,5 +1,4 @@
 // script.js
-const openPopupButton = document.getElementById('open-popup');
 const closePopupButton = document.getElementById('close-popup');
 const popupContainer = document.getElementById('popupContainer');
 
@@ -37,8 +36,6 @@ function closePopup() {
     }, 4000);
     setCookie('popupClosed', 'true', 1); // 1 day
 }
-
-openPopupButton.addEventListener('click', openPopup);
 
 // Add an event listener to close the popup when clicking the "x"
 closePopupButton.addEventListener('click', closePopup);
