@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    background-color: rgb(0, 0, 0); /* Background color for the circle */
+    border-radius: 50%; /* Creates a circular shape */
+    color: white; /* Text color */
+    text-align: center;
+    font-size: 14px; /* Text font size */
+    pointer-events: none; /* Ensures the cursor doesn't interfere with interactions */
+    transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+    display: none; /* Initially hide the cursor */
+    z-index: 3;
+}
+
+.page-content {
+    position: relative;
+}
