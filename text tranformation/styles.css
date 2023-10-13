@@ -1,0 +1,56 @@
+.whitetext {
+    color: white;
+    animation: textTransformWhite 12s linear infinite;
+}
+
+.blacktext {
+    animation: textTransformBlack 12s linear infinite;
+}
+
+@keyframes textTransformWhite {
+    0% {
+        letter-spacing: -6px;
+    }
+    20% {
+        letter-spacing: -4px;
+    }
+    30% {
+        letter-spacing: 0px;
+    } 
+    60% {
+        color: transparent;
+        text-shadow: 0 0 0px white;
+    } 
+    70% {
+        color: transparent;
+        text-shadow: 0 0 4px white;
+    }
+    100% {
+        color: transparent;
+        text-shadow: 0 0 40px white;
+    }
+}
+
+@keyframes textTransformBlack {
+    0% {
+        letter-spacing: -6px;
+    }
+    20% {
+        letter-spacing: -4px;
+    }
+    30% {
+        letter-spacing: 0px;
+    } 
+    60% {
+        color: transparent;
+        text-shadow: 0 0 0px black;
+    } 
+    70% {
+        color: transparent;
+        text-shadow: 0 0 4px black;
+    }
+    100% {
+        color: transparent;
+        text-shadow: 0 0 40px black;
+    }
+}
