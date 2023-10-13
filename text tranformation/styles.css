@@ -1,10 +1,10 @@
 .whitetext {
     color: white;
-    animation: textTransformWhite 12s linear infinite;
+    animation: textTransformWhite 120s linear infinite;
 }
 
 .blacktext {
-    animation: textTransformBlack 12s linear infinite;
+    animation: textTransformBlack 120s linear infinite;
 }
 
 @keyframes textTransformWhite {
