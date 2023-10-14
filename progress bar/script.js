@@ -1,5 +1,6 @@
 function updateProgressBar(percentage) {
     const progressBar = document.getElementById("myProgressBar");
+    const progress = document.getElementById("progress");
     progressBar.style.width = percentage + "%";
     if (percentage <= 30)
         progressBar.innerHTML = percentage + "%<br>(Childhood)";
@@ -18,6 +19,8 @@ const intervalDuration = (duration / targetProgress) * increment;
 // Update the progress bar at regular intervals
 const progressBarInterval = setInterval(function() {
     currentProgress += increment;
+    if (currentProgress == 100)
+        currentProgress -= 100;
     if (currentProgress <= targetProgress) {
         updateProgressBar(currentProgress);
     } else {

@@ -5,6 +5,28 @@
     justify-content: space-evenly;
     position: sticky;
     top: 0px;
+    animation: backgroundChange 12s linear infinite alternate;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background: black;
+    }
+    20% {
+        background: black;
+    }
+    30% {
+        background: white;
+    } 
+    70% {
+        background: white;
+    } 
+    80% {
+        background: black;
+    }
+    100% {
+        background: black;
+    }
 }
 
 .progress-container {
@@ -19,5 +41,30 @@
     background-color: #4CAF50;
     text-align: center;
     line-height: 30px;
-    color: white;   
+    animation: textChange 12s linear infinite alternate;
+}
+
+.progressText {
+    animation: textChange 12s linear infinite alternate;
+}
+
+@keyframes textChange {
+    0% {
+        color: white;
+    }
+    20% {
+        color: white;
+    }
+    30% {
+        color: black;
+    } 
+    70% {
+        color: black;
+    } 
+    80% {
+        color: white;
+    }
+    100% {
+        color: white;
+    }
 }
