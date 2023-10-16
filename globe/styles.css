@@ -7,8 +7,8 @@
 }
 
 .rotating-image {
-    width: 3840px;
-    height: 2160px;
+    width: 4224px;
+    height: 2376px;
     background-image: url('image.png');
     background-size: 100% 100%;
     position: absolute;

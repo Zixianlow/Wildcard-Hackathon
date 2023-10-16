@@ -8,7 +8,8 @@ window.addEventListener("scroll", () => {
     const scrollThreshold = scrollHeight - clientHeight;
 
     // If the scroll position is near the bottom, scroll to the top
-    if (scrollPosition >= scrollThreshold * 0.99) {
+    if (scrollPosition >= scrollThreshold * 0.95) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 });
+

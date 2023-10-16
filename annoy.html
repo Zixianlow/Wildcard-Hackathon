@@ -5,19 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>A Life Journey</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="animage/styles.css">
         <link rel="stylesheet" href="cursor/styles.css">
         <link rel="stylesheet" href="globe/styles.css">
         <link rel="stylesheet" href="popup/styles.css">
         <link rel="stylesheet" href="progress bar/styles.css">
         <link rel="stylesheet" href="registeration/styles.css">
+        <link rel="stylesheet" href="terms/styles.css">
         <link rel="stylesheet" href="text tranformation/styles.css">
     </head>
     <body class="mode">
-        <div class="custom-cursor"><br>YOUR<br>CURSOR<br>IS HERE</div>
+        <div id="terms-popup" class="terms-popup">
+            <div class="terms-popup-content">
+                <span class="terms-close" id="terms-close-popup">&times;</span>
+                <h2 class="terms-text">1. Measure and Watch Your Weight<br>
+                    2. Limit Unhealthy Foods and Eat Healthy Meals<br>
+                    3. Take Multivitamin Supplements<br>
+                    4. Drink Water and Stay Hydrated, and Limit Sugared Beverages<br>
+                    5. Exercise Regularly and Be Physically Active<br>
+                    6. Reduce Sitting and Screen Time<br>
+                    7. Get Enough Good Sleep<br>
+                    8. Go Easy on Alcohol and Stay Sober<br>
+                    9. Find Ways to Manage Your Emotions<br>
+                    10. Use an App to Keep Track of Your Movement, Sleep, and Heart Rate</h2>
+            </div>
+        </div>
+        <div class="custom-cursor whitetext"><br>YOUR<br>CURSOR<br>IS HERE</div>
         <div class="popup-container" id="popupContainer">
             <div class="popup-content" id="popup">
                 <span class="close" id="close-popup">&times;</span>
-                <h2>How can the BOCALS help you?</h2>
+                <h2 class="pop-text">Just Close This.</h2>
             </div>
         </div>
         <div class="image-container">
@@ -32,45 +49,54 @@
             </div>
         </div>
         <div>
-            <h1>Registration Form</h1>
-            <p>Please fill out this form with the required information</p>
-            <form method="post" action='https://register-demo.freecodecamp.org'>
+            <div class="container">
+                <img src="animals/bat.png" alt="Moving Image" id="moving-bat" width="200" height="200">
+                <img src="animals/bat.png" alt="Moving Image" id="moving-bat2" width="100" height="100">
+                <img src="animals/owl.png" alt="Moving Image" id="moving-owl" width="200" height="200">
+                <img src="animals/owl.png" alt="Moving Image" id="moving-owl2" width="100" height="100">
+                <img src="animals/bird.png" alt="Moving Image" id="moving-bird" width="250" height="250">
+                <img src="animals/bird.png" alt="Moving Image" id="moving-bird2" width="150" height="150">
+                <img src="animals/birds.png" alt="Moving Image" id="moving-birds" width="250" height="250">
+                <img src="animals/birds.png" alt="Moving Image" id="moving-birds2" width="150" height="150">
+            </div>
+            <h1 class="whitetext form">Register to be a Successful Man</h1>
+            <p class="blacktext form">Fill up the form to gain success in your life.<br>ENJOY :D</p>
+            <form  method="get" action='https://gifdb.com/images/high/rick-rolled-rick-astley-music-video-02vyj3emq3eeo7bs.webp'>
             <fieldset>
-                <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-                <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-                <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                <label for="new-password" class="whitetext">Create a New Password: <input id="new-password" name="new-password" type="password" required /></label>
+                <label for="email" class="blacktext">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                <label for="username" class="blacktext">Enter Your New Username: <input id="username" name="username" type="text" required /></label>
+                <label for="confirm-password" class="whitetext">Confirm Your Password: <input id="confirm-password" name="confirm-password" type="password" required /></label>
             </fieldset>
             <fieldset>
-                <legend>Account type (required)</legend>
-                <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-                <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
-            </fieldset>
-            <fieldset>
-                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-                <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-                <label for="referrer">How did you hear about us?
-                <select id="referrer" name="referrer">
-                    <option value="">(select one)</option>
-                    <option value="1">freeCodeCamp News</option>
-                    <option value="2">freeCodeCamp YouTube Channel</option>
-                    <option value="3">freeCodeCamp Forum</option>
-                    <option value="4">Other</option>
-                </select>
+                <label for="last-name" class="blacktext">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="profile-picture" class="whitetext">Upload a profile picture: <input class="whitetext" id="profile-picture" type="file" name="file" required /></label>
+                <label for="first-name" class="blacktext">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="phone" class="whitetext"><p>Enter your phone number: <span id="sliderValue">50</span></p><input type="range" min="0" max="9999999999" value="50" class="slider" id="phone456" required /></label>
+                <label for="age" class="whitetext">Input your age (years):   <input id="age" type="number" name="age" min="0" max="99" required /></label>
+                <label for="bio" class="blacktext">Rate this form:
+                <textarea id="bio" name="bio" rows="3" cols="30" class="whitetext" style="resize: none;" placeholder="Give your comment here..."></textarea>
                 </label>
-                <label for="bio">Provide a bio:
-                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-                </label>
             </fieldset>
-            <label for="terms-and-conditions">
-                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            <label for="terms-and-conditions" class="blacktext">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />I accept the <a href="#" id="terms-popup-link" class="whitetext">terms and conditions</a>
             </label>
-            <input type="submit" value="Submit" />
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="whitetext" />
         </div>
+        <script>
+            setTimeout(function() {
+                window.location.href = "https://i.gifer.com/10Qc.gif";
+            }, 119999);
+        </script>
         <script src="script.js"></script>
         <script src="cursor/script.js"></script>
         <script src="popup/script.js"></script>
         <script src="progress bar/script.js"></script>
         <script src="top scroll/script.js"></script>
+        <script src="registeration/script.js"></script>
+        <script src="terms/script.js"></script>
     </body>
 </html>

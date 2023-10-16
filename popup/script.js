@@ -1,15 +1,12 @@
-// script.js
 const closePopupButton = document.getElementById('close-popup');
 const popupContainer = document.getElementById('popupContainer');
 
-// Function to set a cookie with a given name and value
 function setCookie(name, value, days) {
     const expires = new Date();
     expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
     document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
 }
 
-// Function to get the value of a cookie by name
 function getCookie(name) {
     const cookies = document.cookie.split(';');
     for (let i = 0; i < cookies.length; i++) {
@@ -22,7 +19,6 @@ function getCookie(name) {
 }
 
 function openPopup() {
-    // Generate random top and left positions
     popupContainer.style.display = 'block';
     setTimeout(() => {
         popup.style.transform = 'scale(1)';
@@ -34,13 +30,11 @@ function closePopup() {
     setTimeout(() => {
         popupContainer.style.display = 'none';
     }, 4000);
-    setCookie('popupClosed', 'true', 1); // 1 day
+    setCookie('popupClosed', 'true', 1);
 }
 
-// Add an event listener to close the popup when clicking the "x"
 closePopupButton.addEventListener('click', closePopup);
 
-// Function to open the popup every 2 minutes if the user has not closed it
 function openPopupAutomatically() {
     const popupClosed = getCookie('popupClosed');
     if (!popupClosed) {
@@ -48,10 +42,5 @@ function openPopupAutomatically() {
     }
 }
 
-// Open the popup immediately
 openPopupAutomatically();
-
-// Set an interval to open the popup every 2 minutes if the user has not closed it
-setInterval(openPopupAutomatically, 10 * 1000);
-
-// Remove the interval that moves and shows the popup every 5 seconds
+setInterval(openPopupAutomatically, 25 * 1000);

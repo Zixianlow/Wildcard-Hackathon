@@ -1,5 +1,5 @@
 
-  h1, p {
+.register-text {
     margin: 1em auto;
     text-align: center;
   }
@@ -18,13 +18,10 @@
     border-bottom: 3px solid #3b3b4f;
   }
   
-  fieldset:last-of-type {
-    border-bottom: none;
-  }
-  
   label {
     display: block;
     margin: 0.5rem 0;
+    cursor: none;
   }
   
   input,
@@ -33,6 +30,7 @@
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    cursor: none;
   }
   
   input, textarea {
@@ -56,6 +54,7 @@
     background-color: #3b3b4f;
     border-color: white;
     min-width: 300px;
+    
   }
   
   input[type="file"] {

@@ -1,0 +1,315 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Set the height of the container to match your image */ /* Hide the overflow of the image */
+    z-index: -1;
+    overflow: hidden;
+}
+
+#moving-bat {
+    position: absolute;
+    animation: moveRightBat 12s linear infinite; 
+    z-index: 90;
+}
+
+#moving-bat2 {
+    transform: scaleX(-1);
+    position: absolute;
+    animation: moveLeftOwl2 12s linear infinite; /* You can adjust the duration and timing function */
+    z-index: 90;
+}
+
+#moving-owl {
+    position: absolute;
+    animation: moveLeftOwl 12s linear infinite; /* You can adjust the duration and timing function */
+    z-index: 90;
+}
+
+#moving-owl2 {
+    transform: scaleX(-1);
+    position: absolute;
+    animation: moveRightBat2 12s linear infinite; /* You can adjust the duration and timing function */
+    z-index: 90;
+}
+
+@keyframes moveRightBat {
+    0% {
+        bottom:2%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    10% {
+        bottom:62%;
+    }
+    15% {
+        bottom:42%;
+    }
+    25% {
+        bottom:98%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+    25.01% {
+        bottom:2%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    75% {
+        bottom:2%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    85% {
+        bottom:62%;
+    }
+    90% {
+        bottom:42%;
+    }
+    100% {
+        bottom:98%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+}
+
+@keyframes moveRightBat2 {
+    0% {
+        bottom:98%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    17.5%, 25% {
+        bottom:2%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+    25.01% {
+        bottom:2%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    75% {
+        bottom:98%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    92.5%, 100% {
+        bottom:2%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+}
+
+@keyframes moveLeftOwl {
+    0% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    7.5% {
+        bottom:62%;
+        left: 80%;
+    }
+    17.5% {
+        bottom:22%;
+        left: 40%;
+    }
+    25% {
+        bottom:98%;
+        left: -200px; /* End position outside the viewport on the right */
+    }
+    25.01% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    75% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    82.5% {
+        bottom:62%;
+        left: 80%;
+    }
+    92.5% {
+        bottom:22%;
+        left: 40%;
+    }
+    100% {
+        bottom:98%;
+        left: -200px; /* End position outside the viewport on the right */
+    }
+}
+
+@keyframes moveLeftOwl2 {
+    0%, 2.5% {
+        bottom:38%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    15%, 25% {
+        bottom:62%;
+        left: -5%; /* End position outside the viewport on the right */
+    }
+    25.01% {
+        bottom:38%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    75%, 77.5% {
+        bottom:38%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    90%, 100% {
+        bottom:62%;
+        left: -5%; /* End position outside the viewport on the right */
+    }
+}
+
+#moving-bird {
+    transform: scaleX(-1);
+    position: absolute;
+    animation: moveLeftBird 12s linear infinite;
+    z-index: 90;
+}
+
+#moving-bird2 {
+    position: absolute;
+    animation: moveRightBird 12s linear infinite;
+    z-index: 90;
+}
+
+#moving-birds {
+    position: absolute;
+    animation: moveRightBirds 12s linear infinite; 
+    z-index: 90;
+}
+
+#moving-birds2 {
+    transform: scaleX(-1);
+    position: absolute;
+    animation: moveLeftBirds 12s linear infinite; 
+    z-index: 90;
+}
+
+@keyframes moveLeftBird {
+    0% {
+        bottom:38%;
+        left: 100%;
+    }
+    25%, 27.5% {
+        bottom:38%;
+        left: 100%;
+    }
+    40%, 50% {
+        bottom:62%;
+        left: -250px; /* End position outside the viewport on the right */
+    }
+    50.01%, 52.5% {
+        bottom:38%;
+        left: 100%;
+    }
+    65%, 75% {
+        bottom:62%;
+        left: -250px;
+    }
+    100% {
+        bottom:62%;
+        left: -250px;
+    }
+}
+
+@keyframes moveRightBird {
+    0% {
+        bottom:2%;
+        left: -200px;
+    }
+    25% {
+        bottom:2%;
+        left: -200px;
+    }
+    35% {
+        bottom:62%;
+    }
+    40% {
+        bottom:42%;
+    }
+    50% {
+        bottom:98%;
+        left: 100%;
+    }
+    50.01% {
+        bottom:2%;
+        left: -200px;
+    }
+    60% {
+        bottom:62%;
+    }
+    65% {
+        bottom:42%;
+    }
+    75% {
+        bottom:98%;
+        left: 100%;
+    }
+    100% {
+        bottom:98%;
+        left: 100%;
+    }
+}
+
+@keyframes moveRightBirds {
+    0% {
+        bottom:98%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    25% {
+        bottom:98%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    42.5%, 50% {
+        bottom:2%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+    50.01% {
+        bottom:98%;
+        left: -200px; /* Start position outside the viewport on the left */
+    }
+    67.5%, 75% {
+        bottom:2%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+    100% {
+        bottom:2%;
+        left: 100%; /* End position outside the viewport on the right */
+    }
+}
+
+@keyframes moveLeftBirds {
+    0% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    25% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    32.5% {
+        bottom:62%;
+        left: 80%;
+    }
+    42.5% {
+        bottom:22%;
+        left: 40%;
+    }
+    50% {
+        bottom:98%;
+        left: -200px; /* End position outside the viewport on the right */
+    }
+    50.01% {
+        bottom:2%;
+        left: 100%; /* Start position outside the viewport on the left */
+    }
+    57.5% {
+        bottom:62%;
+        left: 80%;
+    }
+    67.5% {
+        bottom:22%;
+        left: 40%;
+    }
+    75% {
+        bottom:98%;
+        left: -200px; /* End position outside the viewport on the right */
+    }
+    100% {
+        bottom:98%;
+        left: -200px; /* End position outside the viewport on the right */
+    }
+}
