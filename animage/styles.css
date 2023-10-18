@@ -35,7 +35,7 @@
 @keyframes moveRightBat {
     0% {
         bottom:2%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     10% {
         bottom:62%;
@@ -49,11 +49,11 @@
     }
     25.01% {
         bottom:2%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     75% {
         bottom:2%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     85% {
         bottom:62%;
@@ -70,7 +70,7 @@
 @keyframes moveRightBat2 {
     0% {
         bottom:98%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     17.5%, 25% {
         bottom:2%;
@@ -78,11 +78,11 @@
     }
     25.01% {
         bottom:2%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     75% {
         bottom:98%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     92.5%, 100% {
         bottom:2%;
@@ -105,7 +105,7 @@
     }
     25% {
         bottom:98%;
-        left: -200px; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
     25.01% {
         bottom:2%;
@@ -125,7 +125,7 @@
     }
     100% {
         bottom:98%;
-        left: -200px; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
 }
 
@@ -136,7 +136,7 @@
     }
     15%, 25% {
         bottom:62%;
-        left: -5%; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
     25.01% {
         bottom:38%;
@@ -148,7 +148,7 @@
     }
     90%, 100% {
         bottom:62%;
-        left: -5%; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
 }
 
@@ -208,11 +208,11 @@
 @keyframes moveRightBird {
     0% {
         bottom:2%;
-        left: -200px;
+        left: -250px;
     }
     25% {
         bottom:2%;
-        left: -200px;
+        left: -250px;
     }
     35% {
         bottom:62%;
@@ -247,11 +247,11 @@
 @keyframes moveRightBirds {
     0% {
         bottom:98%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     25% {
         bottom:98%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     42.5%, 50% {
         bottom:2%;
@@ -259,7 +259,7 @@
     }
     50.01% {
         bottom:98%;
-        left: -200px; /* Start position outside the viewport on the left */
+        left: -250px; /* Start position outside the viewport on the left */
     }
     67.5%, 75% {
         bottom:2%;
@@ -290,7 +290,7 @@
     }
     50% {
         bottom:98%;
-        left: -200px; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
     50.01% {
         bottom:2%;
@@ -306,10 +306,10 @@
     }
     75% {
         bottom:98%;
-        left: -200px; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
     100% {
         bottom:98%;
-        left: -200px; /* End position outside the viewport on the right */
+        left: -250px; /* End position outside the viewport on the right */
     }
 }
