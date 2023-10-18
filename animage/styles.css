@@ -1,4 +1,13 @@
-.container {
+.animage-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Set the height of the container to match your image */ /* Hide the overflow of the image */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.animage-container2 {
+    top: 150vh;
     position: absolute;
     width: 100%;
     height: 100vh; /* Set the height of the container to match your image */ /* Hide the overflow of the image */
